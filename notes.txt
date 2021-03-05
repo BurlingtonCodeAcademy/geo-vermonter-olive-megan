@@ -1,0 +1,29 @@
+
+- on guessSubmit -> create a popup which informs if correct or incorrect, score - 10
+
+- Fix marker moving
+
+- Return -> move back to initial location
+
+-  Create scoreboard
+    - minus 1 point for each directional
+    - minus 10 points for each guess
+
+- click N, E, S, W -> leaves a dotted line between previous map location and current map location, keeps showing line for rest of game
+
+- When win -> game asks user for their name, saves name & score to a list of games
+
+- select "high scores" from nav bar -> show list of games in score order
+Having this state here, if you were to run your setCenter it would only change state on this page. It wouldn't communicate up the line to change your props.center even though your center variable on this page is being set to props.center
+
+- Disable compass buttons until start
+
+- Fix  obscure zoom controls enabled, like using the + and - signs on the keyboard.
+
+- After a User clicks "I Give Up", the game doesn't stop playing. You can still pick a winning location. Disabling your other buttons could be a good way to indicate that the game has ended when they click "I Give Up"
+
+- Organization: A good practice for creating file structure is to put your CSS inside of a styles folder and to remove files that aren't being used, such as your App.test.js or your setupTests.js
+
+- Putting the keyword return ignores everything that comes after it. so your props.setTempWin(true) and your console.log isn't being registered. You can move this to the bottom of your if statement to see those two things happen
+
+- Do basic format/outline : Title, status bar, centering 
